@@ -52,12 +52,17 @@ module.exports = function(options, app) {
       // 路由到子应用
       this.routerPath = '/' + appName + this.path;
       this.subApp = subApp;
+      // override service getter
+      Object.defineProperty(this, 'service', {
+        get: () => {
+          return this[`${appName}.subAppServices`];
+        },
+      });
     } else {
       if (app.config.notfound.pageUrl) {
         return this.redirect(app.config.notfound.pageUrl);
       }
     }
-
     yield next;
   };
 };
