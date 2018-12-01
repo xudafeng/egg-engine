@@ -3,7 +3,7 @@
 exports.keys = '123456';
 
 exports.subApp = {
-  virtualHosts: {
+  appsMap: {
     'virtualhost.subapp.com': 'demo.subapp.com',
   },
   middleware: {

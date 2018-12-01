@@ -40,8 +40,8 @@ module.exports = function(options, app) {
     }
 
     // 1. 在config中有配置映射，按照配置路由
-    let appName = Object.keys(options.virtualHosts)
-      .find(item => options.virtualHosts[item].hostname === hostname);
+    let appName = Object.keys(options.appsMap)
+      .find(item => options.appsMap[item].hostname === hostname);
     if (!appName) {
       // 2. 没有在config里配置映射，默认路由到 hostanme/view/xxx
       appName = hostname;

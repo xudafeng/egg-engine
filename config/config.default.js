@@ -6,8 +6,8 @@ module.exports = appInfo => {
   const exports = {};
 
   exports.subApp = {
-    virtualHosts: {
-      // 应用通过配置 virtualHosts 来自定义访问域名
+    appsMap: {
+      // 应用通过配置 appsMap 来自定义访问域名
     },
     middleware: {
       // 配置subapp的全局前置中间件，如 'demo.subapp.com': [ needLogin, ... ]

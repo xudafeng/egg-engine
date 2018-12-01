@@ -109,7 +109,7 @@ describe('test/subapp.test.js', () => {
     });
   });
 
-  describe('virtualHosts should work', () => {
+  describe('appsMap should work', () => {
     it('virtualhost.subapp.com => demo.subapp.com', () => {
       return app.httpRequest()
         .get('/indexAsync?__app=virtualhost.subapp.com')
