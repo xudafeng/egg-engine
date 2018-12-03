@@ -1,6 +1,6 @@
 {
   "name": "egg-engine",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "help you create multi-site applications quickly and easily",
   "eggPlugin": {
     "name": "subapp",
