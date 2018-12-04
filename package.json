@@ -1,6 +1,6 @@
 {
   "name": "egg-engine",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "help you create multi-site applications quickly and easily",
   "eggPlugin": {
     "name": "subapp",
@@ -26,7 +26,6 @@
     "egg-bin": "^4.3.7",
     "egg-ci": "^1.8.0",
     "egg-mock": "^3.14.0",
-    "egg-view-nunjucks": "^2.1.4",
     "eslint": "^4.14.0",
     "eslint-config-egg": "^6.0.0",
     "webstorm-disable-index": "^1.2.0"

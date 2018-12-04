@@ -10,13 +10,5 @@ module.exports = appInfo => {
     },
   };
 
-  exports.view = {
-    root: path.join(appInfo.baseDir, 'app'),
-    defaultViewEngine: 'nunjucks',
-    mapping: {
-      '.html': 'nunjucks',
-    },
-  };
-
   return exports;
 };
