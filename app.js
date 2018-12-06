@@ -9,8 +9,6 @@ module.exports = app => {
 
   process.nextTick(() => {
 
-    //require('./lib/render')(app);
-
     require('./lib/service')(app);
 
     require('./lib/controller')(app);
