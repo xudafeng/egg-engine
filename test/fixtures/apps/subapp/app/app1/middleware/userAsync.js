@@ -5,7 +5,7 @@ module.exports = () => {
     if (!ctx.locals) {
       ctx.locals = {};
     }
-    ctx.locals.name = 'jambo';
+    ctx.locals.name = 'awesome jambo';
     await next();
   };
 };

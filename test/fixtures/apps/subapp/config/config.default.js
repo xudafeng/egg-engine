@@ -1,13 +1,15 @@
 'use strict';
 
+const path = require('path');
+
 exports.keys = '123456';
 
 exports.subApp = {
   appsMap: {
-    'virtualhost.subapp.com': 'demo.subapp.com',
-  },
-  middleware: {
-    'demo.subapp.com': [ 'globalMw', 'disabledMw' ],
+    app1: {
+      hostname: 'app1.local',
+      baseDir: path.join(__dirname, '..', 'app', 'app1'),
+    },
   },
 };
 
