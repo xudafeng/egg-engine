@@ -7,7 +7,7 @@ class UserService extends Service {
     return new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          name: 'jambo',
+          name: 'awesome jambo',
         });
       }, 500);
     });

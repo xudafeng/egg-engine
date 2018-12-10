@@ -5,7 +5,7 @@ module.exports = () => {
     if (!this.locals) {
       this.locals = {};
     }
-    this.locals.name = 'jambo';
+    this.locals.name = 'awesome jambo';
     yield next;
   };
 };

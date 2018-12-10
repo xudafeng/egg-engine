@@ -34,19 +34,17 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
-    "test-local": "egg-bin test",
+    "test": "egg-bin test",
     "cov": "egg-bin cov",
-    "lint": "eslint .",
-    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
-    "pkgfiles": "egg-bin pkgfiles",
+    "lint": "eslint . --fix",
+    "ci": "npm run lint && npm run cov",
     "autod": "autod"
   },
   "files": [
     "app",
     "config",
-    "lib",
-    "app.js"
+    "app.js",
+    "lib"
   ],
   "ci": {
     "version": "8, 9"
