@@ -9,12 +9,12 @@
 
 [npm-image]: https://img.shields.io/npm/v/egg-engine.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-engine
-[travis-image]: https://img.shields.io/travis/eggjs/egg-engine.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-engine
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-engine.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-engine?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-engine.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-engine
+[travis-image]: https://img.shields.io/travis/xudafeng/egg-engine.svg?style=flat-square
+[travis-url]: https://travis-ci.org/xudafeng/egg-engine
+[codecov-image]: https://img.shields.io/codecov/c/github/xudafeng/egg-engine.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/xudafeng/egg-engine?branch=master
+[david-image]: https://img.shields.io/david/xudafeng/egg-engine.svg?style=flat-square
+[david-url]: https://david-dm.org/xudafeng/egg-engine
 [snyk-image]: https://snyk.io/test/npm/egg-engine/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-engine
 [download-image]: https://img.shields.io/npm/dm/egg-engine.svg?style=flat-square
@@ -36,24 +36,6 @@ exports.subapp = {
   enable: true,
   package: 'egg-engine',
 };
-```
-
-## 使用说明
-
-站点目录结构约定
-
-```
-app
- |- demo.subapp.com
-    |- controller
-    |- middleware
-    |- service
-    |- router
-       |- index.js
-       |- book.js
-       |- ...
- |- demo2.subapp.com
-    |- ...
 ```
 
 > 各个站点的环境是隔离的，每个站点里定义的controller、middleware、service仅能被本站点的使用。
